@@ -1,0 +1,19 @@
+[package]
+name = "axum-prisma-starter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+   prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.1" }
+   tokio = { version = "1.0", features = ["full"] }
+   serde = { version = "1.0", features = ["derive"] }
+   axum = "0.6.0-rc.2"
+axum-macros = "0.2.3"
+   
+[workspace]
+members = [
+   "./prisma-cli"
+  ]
+resolver = "2"
