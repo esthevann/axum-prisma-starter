@@ -1,5 +1,6 @@
 [package]
-name = "axum-prisma-starter"
+name = "{{project-name}}"
+authors = ["{{authors}}"]
 version = "0.1.0"
 edition = "2021"
 
